@@ -5,6 +5,7 @@
   "scripts": {
     "build": "rollup -c",
     "test": "jest",
+    "prepare": "npm run build",
     "dev": "npm run build && rm -rf example/src/dist && cp -R dist example/src/dist && cd example && npm install && npm start"
   },
   "keywords": [],
